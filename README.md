@@ -10,4 +10,6 @@
 - User story: I can see pages following given designs
 - Icon: https://google.github.io/material-design-icons/
 
+Figma doc: https://www.figma.com/file/KGNH8dbclXT1vzXLyPrBeu/Windbnb?node-id=1%3A4
+
 Once you completed, submit your solutions by providing URLs for both GitHub repository and live app on any hosting platform and explain briefly what you have done. You can check others’ solutions and give them feedbacks.
