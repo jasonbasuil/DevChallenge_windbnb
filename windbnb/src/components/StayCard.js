@@ -1,15 +1,22 @@
 import React from "react";
+import RatingStar from "../assets/RatingStar.svg";
 
-const StayCard = ({stay}) => {
+const StayCard = ({ stay }) => {
   return (
-    <div>
-      <img src={stay.photo} alt="stay card" style={{height: "100px", width: "100px"}}></img>
+    <div className='stay-card'>
+      <img src={stay.photo} alt="stay card"></img>
+      <div className='stay-card-info'>
       {stay.superHost && (
-        <div>Super Host</div>
+        <p id="super-host-button">Super Host</p>
       )}
-      <div>{stay.type}</div>
-      <div>{stay.rating}</div>
-      <div>{stay.title}</div>
+        <p id="type" style={stay.superHost ? null : {float: "left"}}>{stay.type}</p>
+        <div id="rating">
+          <img src={RatingStar} alt='star rating'></img>
+          {stay.rating}
+        </div>
+        <div id='title'>{stay.title}</div>
+      </div>
+   
     </div>
   )
 }
